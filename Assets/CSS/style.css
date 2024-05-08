@@ -1,0 +1,224 @@
+body{
+    background-color: var(--body);
+}
+:root{
+    --bg1: #000000;
+    --bg2: rgb(155, 6, 6);
+    --body: rgb(95, 86, 86);
+    --brand: red;
+    --white: rgb(255, 255, 255);
+    --p: rgb(161, 150, 150);;
+}
+
+.navbar{
+   height: 15vh; 
+   background-color: var(--bg2) !important;
+   color: aliceblue !important;
+   background-image: linear-gradient(to top, hsla(0, 0%, 0%, 0.856), rgb(194, 22, 22));
+}
+.navbar a {
+    color: var(--bg1) !important;
+}
+
+.navbar #navbar .nav-link.active{
+    color: var(--brand) !important;
+}
+.navbar .nav-link:hover  {
+    color: var(--brand) !important;
+}
+#banner{
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* pharallax effect */
+    background-attachment: fixed;
+    height: 90vh;
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 0.315 )), url('https://images.unsplash.com/photo-1546708770-589dab7b22c7?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+
+/*Button*/
+.btn{
+    padding: 15px 30px;
+    transition: all 0.4s ease;
+    font-weight: 800;
+    border-radius: 0;
+    color: #000000;
+
+}
+.btn-brand {
+ background-color: var(--brand);
+}
+.btn-brand:hover{
+    background-color: transparent;
+    border-color: var(--brand);
+    color: var(--brand)
+}
+ 
+h1{
+    color: var(--white);
+font-weight: 800;
+font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color: var(--brand);
+}
+h6{
+    color: var(--brand);
+}
+p{
+    color: var(--p);
+
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+.icon-box-img{
+    width: 90%;
+    align-self: center;
+    padding: 50px;
+}
+.btn-outline-brand{
+    background-color: transparent;
+    color: var(--bg1);
+    border-color: var(--brand);
+}
+ .btn-outline-brand:hover{
+    background-color: transparent;
+    color: var(--bg1);
+   
+ }
+ .card{
+    transition: background-color 0.3s, color 0.3s;
+ }
+ .card:hover{
+    background-color: var(--brand);
+ }
+ .card:hover .card-title,
+ .card:hover .card-text
+ .card:hover .btn{
+color: #ffff;
+ }
+
+ #cta{
+    position: relative;
+    opacity: 0.90;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* pharallax effect */
+    background-attachment: fixed;
+    /* pharallax effect / to remove to effect set to normal*/
+    background-image: linear-gradient(to right, hsla(0, 2%, 17%, 0.856), rgba(44, 42, 0.315 )), url('https://images.unsplash.com/photo-1546708770-589dab7b22c7?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    min-height: 70vh;
+ }
+
+#reviews{
+    color: var(--brand);
+    background-color: var(--bg1);
+    text-decoration-color: var(--white);
+}
+.testimonials{
+    background-color: var(--bg2);
+    padding: 30px;
+}
+.testimonials img{
+   width: 65px;
+   border-radius: 100px;
+   height: 65px;
+}
+#reviews a {
+    color: var(--white);
+}
+#about {
+    background-color: var(--bg1);
+}
+#Services {
+    background-color: var(--bg1);
+}
+.faq-section{
+    max-width: 800px;
+    margin: auto; 
+    
+}
+.accordion-item{
+    margin-bottom: 20px;
+    border-radius: 0 !important;
+}
+
+.faq-question{
+    background-color: rgb(194, 22, 22);
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3;;
+}
+.faq-answer{
+    border-left: 3px solid var(--brand);
+    padding: 10px 15px;
+    margin-left: 0;
+    background-color: #000000;
+}
+
+.faq-answer p{
+    margin-bottom: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bg1);
+}
+/* Hover effect for FAQ question*/
+.faq-question:hover {
+    background-color: var(--body);
+    color:var(--bg2);
+}
+ /*Adjust accordion icon */
+ .accordion-button:after {
+    font-family: "Font Awesome 5 Free";
+    content: "" ;
+    float:right;
+    font-weight: 900;
+    margin-left: auto;
+
+ }
+ .accordion-button[ aria-expanded="true"]::after {
+    content: "";
+ }  
+  #footer{
+    padding: 50px;
+    padding-bottom: 50px;
+    background-color: var(--bg1);
+  }
+
+  #footer ul.list-unstyled li a {
+    color:white;
+  }
+
+  #footer ul.list-unstyled li:hover a{
+    color: var(--brand);
+  }
+  #revies h2, #services h2 {
+    border-color: maroon !important;
+    color: maroon;
+  }
+  #footer h5 {
+    color: var(--brand);
+    margin-bottom: 15px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .p.light{
+    color: var(--p);
+  }
